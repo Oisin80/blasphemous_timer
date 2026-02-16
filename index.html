@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi contador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="contador"></div>
+  <div id="texto">Penance never ends</div>
+
+  <script>
+    // -------- CONFIGURACIÓN --------
+    const fechaInicio = new Date("2024-10-31T18:00:00"); // Cambia la fecha aquí
+    const contadorActivo = true; // Cambia a false para detener el contador
+    // --------------------------------
+
+    function actualizarContador() {
+      if (!contadorActivo) return;
+
+      const ahora = new Date();
+      let diferencia = ahora - fechaInicio;
+      let segundosTotales = Math.floor(diferencia / 1000);
+
+      let dias = Math.floor(segundosTotales / (3600 * 24));
+      let horas = Math.floor((segundosTotales % (3600 * 24)) / 3600);
+      let minutos = Math.floor((segundosTotales % 3600) / 60);
+      let segundos = segundosTotales % 60;
+
+      document.getElementById("contador").innerHTML =
+        `${dias} días ${horas}h ${minutos}m ${segundos}s`;
+    }
+
+    setInterval(actualizarContador, 1000);
+    actualizarContador();
+  </script>
+
+</body>
+</html>
