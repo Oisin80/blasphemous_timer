@@ -1,0 +1,36 @@
+/* ---------------- Fuente personalizada ---------------- */
+@font-face {
+    font-family: 'blasphemous';
+    src: url('fonts/blasphemous.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ---------------- Estilo general ---------------- */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;  /* Fondo negro sólido */
+    color: white;             /* Texto en blanco */
+    font-family: 'blasphemous', sans-serif;
+    text-align: center;
+}
+
+
+/* ---------------- Contador ---------------- */
+#contador {
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+/* ---------------- Texto debajo ---------------- */
+#texto {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+}
