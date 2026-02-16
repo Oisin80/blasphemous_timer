@@ -29,21 +29,13 @@ body {
 }
 
 /* ---------------- Texto debajo ---------------- */
-#texto {
-    margin-top: 20px;
-    font-size: 2rem;
-    text-align: center;
-}
 
-#texto a {
-    color: white;
+#texto {
     text-decoration: none;
     margin: 0 10px;
-    transition: color 0.3s ease;
-    font-family: 'blasphemous' ;
 }
 
-#texto a:hover {
+#texto:hover {
     color: #FFD700;
 }
 
